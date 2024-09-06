@@ -2,7 +2,7 @@
     {
         "id": "chen",
         "character": "Chen",
-        "common": "domestic cat",
+        "common": "Domestic Cat",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -16,7 +16,7 @@
     {
         "id": "doremi",
         "character": "Doremi Sweet",
-        "common": "Malay tapir",
+        "common": "Malay Tapir",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -30,7 +30,7 @@
     {
         "id": "larva",
         "character": "Eternity Larva",
-        "common": "Asian swallowtail",
+        "common": "Asian Swallowtail",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Arthropoda",
@@ -44,7 +44,7 @@
     {
         "id": "flandre",
         "character": "Flandre Scarlet",
-        "common": "common vampire bat",
+        "common": "Common Vampire Bat",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -58,7 +58,7 @@
     {
         "id": "mamizou",
         "character": "Futatsuiwa Mamizou",
-        "common": "raccoon dog",
+        "common": "Raccoon Dog",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -72,7 +72,7 @@
     {
         "id": "michael",
         "character": "Gotokuji Mike",
-        "common": "domestic cat",
+        "common": "Domestic Cat",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -86,7 +86,7 @@
     {
         "id": "hatate",
         "character": "Himekaido Hatate",
-        "common": "carrion crow",
+        "common": "Carrion Crow",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -100,7 +100,7 @@
     {
         "id": "momoyo",
         "character": "Himemushi Momoyo",
-        "common": "giant centipede",
+        "common": "Giant Centipede",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Arthropoda",
@@ -114,7 +114,7 @@
     {
         "id": "megumu",
         "character": "Iizunamaru Megumu",
-        "common": "carrion crow",
+        "common": "Carrion Crow",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -128,7 +128,7 @@
     {
         "id": "kagerou",
         "character": "Imaizumi Kagerou",
-        "common": "wolf / domestic dog",
+        "common": "Wolf / Domestic Dog",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -142,7 +142,7 @@
     {
         "id": "tewi",
         "character": "Inaba Tewi",
-        "common": "Japanese hare",
+        "common": "Japanese Hare",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -156,7 +156,7 @@
     {
         "id": "momiji",
         "character": "Inubashiri Momiji",
-        "common": "wolf / domestic dog",
+        "common": "Wolf / Domestic Dog",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -170,7 +170,7 @@
     {
         "id": "orin",
         "character": "Kaenbyou Rin",
-        "common": "domestic cat",
+        "common": "Domestic Cat",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -184,7 +184,7 @@
     {
         "id": "keine",
         "character": "Kamishirasawa Keine",
-        "common": "domesticated cattle",
+        "common": "Domesticated Cattle",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -198,7 +198,7 @@
     {
         "id": "kyouko",
         "character": "Kasodani Kyouko",
-        "common": "wolf / domestic dog",
+        "common": "Wolf / Domestic Dog",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -212,7 +212,7 @@
     {
         "id": "yachie",
         "character": "Kicchou Yachie",
-        "common": "Chinese broad-headed pond turtle",
+        "common": "Chinese Broad-headed Pond Turtle",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -226,7 +226,7 @@
     {
         "id": "aunn",
         "character": "Komano Aunn",
-        "common": "wolf / domestic dog",
+        "common": "Wolf / Domestic Dog",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -240,7 +240,7 @@
     {
         "id": "tsukasa",
         "character": "Kudamaki Tsukasa",
-        "common": "red fox",
+        "common": "Red Fox",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -254,7 +254,7 @@
     {
         "id": "yamame",
         "character": "Kurodani Yamame",
-        "common": "Joro spider",
+        "common": "Joro Spider",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Arthropoda",
@@ -268,7 +268,7 @@
     {
         "id": "saki",
         "character": "Kurokoma Saki",
-        "common": "horse",
+        "common": "Horse",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -282,7 +282,7 @@
     {
         "id": "enoko",
         "character": "Mitsugashira Enoko",
-        "common": "wolf / domestic dog",
+        "common": "Wolf / Domestic Dog",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -296,7 +296,7 @@
     {
         "id": "suwako",
         "character": "Moriya Suwako",
-        "common": "Japanese tree frog",
+        "common": "Japanese Tree Frog",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -310,7 +310,7 @@
     {
         "id": "mystia",
         "character": "Mystia Lorelei",
-        "common": "Eurasian tree sparrow",
+        "common": "Eurasian Tree Sparrow",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -324,7 +324,7 @@
     {
         "id": "iku",
         "character": "Nagae Iku",
-        "common": "giant oarfish",
+        "common": "Giant Oarfish",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -338,7 +338,7 @@
     {
         "id": "nazrin",
         "character": "Nazrin",
-        "common": "house mouse",
+        "common": "House Mouse",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -352,7 +352,7 @@
     {
         "id": "kutaka",
         "character": "Niwatari Kutaka",
-        "common": "chicken",
+        "common": "Chicken",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -366,7 +366,7 @@
     {
         "id": "reisen",
         "character": "Reisen II",
-        "common": "Japanese hare",
+        "common": "Japanese Hare",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -380,7 +380,7 @@
     {
         "id": "udonge",
         "character": "Reisen Udongein Inaba",
-        "common": "Japanese hare",
+        "common": "Japanese Hare",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -394,7 +394,7 @@
     {
         "id": "okuu",
         "character": "Reiuji Utsuho",
-        "common": "common raven",
+        "common": "Common Raven",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -408,7 +408,7 @@
     {
         "id": "remilia",
         "character": "Remilia Scarlet",
-        "common": "common vampire bat",
+        "common": "Common Vampire Bat",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -422,7 +422,7 @@
     {
         "id": "ringo",
         "character": "Ringo",
-        "common": "Japanese hare",
+        "common": "Japanese Hare",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -436,7 +436,7 @@
     {
         "id": "seiran",
         "character": "Seiran",
-        "common": "Japanese hare",
+        "common": "Japanese Hare",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -450,7 +450,7 @@
     {
         "id": "aya",
         "character": "Shameimaru Aya",
-        "common": "carrion crow",
+        "common": "Carrion Crow",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -464,7 +464,7 @@
     {
         "id": "biten",
         "character": "Son Biten",
-        "common": "golden snub-nosed monkey",
+        "common": "Golden Snub-nosed Monkey",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -478,7 +478,7 @@
     {
         "id": "shou",
         "character": "Toramaru Shou",
-        "common": "tiger",
+        "common": "Tiger",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -492,7 +492,7 @@
     {
         "id": "yuuma",
         "character": "Toutetsu Yuuma",
-        "common": "sheep",
+        "common": "Sheep",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -506,7 +506,7 @@
     {
         "id": "urumi",
         "character": "Ushizaki Urumi",
-        "common": "domesticated cattle",
+        "common": "Domesticated Cattle",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -520,7 +520,7 @@
     {
         "id": "wakasagihime",
         "character": "Wakasagihime",
-        "common": "Japanese smelt",
+        "common": "Japanese Smelt",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -534,7 +534,7 @@
     {
         "id": "wriggle",
         "character": "Wriggle Nightbug",
-        "common": "Genji firefly",
+        "common": "Genji Firefly",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Arthropoda",
@@ -548,7 +548,7 @@
     {
         "id": "ran",
         "character": "Yakumo Ran",
-        "common": "red fox",
+        "common": "Red Fox",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -562,7 +562,7 @@
     {
         "id": "kanako",
         "character": "Yasaka Kanako",
-        "common": "Japanese odd-scaled snake",
+        "common": "Japanese Odd-scaled Snake",
         "scientific": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
@@ -571,6 +571,20 @@
             "family": "Xenodermidae",
             "genus": "Achalinus",
             "species": "Achalinus spinalis"
+        }
+    },   
+    {
+        "id": "human",
+        "character": "Hakurei Reimu (and others, and you, probably)",
+        "common": "Human",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Hominidae",
+            "genus": "Homo",
+            "species": "Homo sapiens"
         }
     }
 ]

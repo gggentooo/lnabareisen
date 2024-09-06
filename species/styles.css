@@ -9,6 +9,11 @@ h1 {
     text-align: center;
 }
 
+.yada-yada {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 .tree-controls {
     text-align: center;
     margin-bottom: 20px;
@@ -44,27 +49,29 @@ h1 {
 
 .tree .toggle {
     cursor: pointer;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 5px;
 }
 
-.label {
+.family,
+.genus,
+.species {
+    font-style: italic;
+}
+
+.label,
+.info {
     font-size: 0.8em;
-    color: grey; 
+    color: grey;
 }
 
 .tree .nested {
-    display: none; 
+    display: none;
     padding-left: 20px;
 }
 
 .tree .nested.active {
-    display: block; 
-}
-
-.tree .info {
-    font-style: italic;
-    color: #555;
+    display: block;
 }
 
 .tree li {
@@ -79,6 +86,12 @@ h1 {
     color: #007BFF;
 }
 
+.name,
+.name:hover {
+    color: black !important;
+}
+
+.info:hover,
 .tree li .label:hover {
-    color: grey;
+    color: grey !important;
 }
