@@ -1,0 +1,576 @@
+[
+    {
+        "id": "chen",
+        "character": "Chen",
+        "common": "domestic cat",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Felis",
+            "species": "Felis catus"
+        }
+    },
+    {
+        "id": "doremi",
+        "character": "Doremi Sweet",
+        "common": "Malay tapir",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Perissodactyla",
+            "family": "Tapiridae",
+            "genus": "Acrocodia",
+            "species": "Tapirus indicus"
+        }
+    },
+    {
+        "id": "larva",
+        "character": "Eternity Larva",
+        "common": "Asian swallowtail",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Lepidoptera",
+            "family": "Papilionidae",
+            "genus": "Papilio",
+            "species": "Papilio xuthus"
+        }
+    },
+    {
+        "id": "flandre",
+        "character": "Flandre Scarlet",
+        "common": "common vampire bat",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Chiroptera",
+            "family": "Phyllostomidae",
+            "genus": "Desmodus",
+            "species": "Desmodus rotundus"
+        }
+    },
+    {
+        "id": "mamizou",
+        "character": "Futatsuiwa Mamizou",
+        "common": "raccoon dog",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Nyctereutes",
+            "species": "Nyctereutes procyonoides"
+        }
+    },
+    {
+        "id": "michael",
+        "character": "Gotokuji Mike",
+        "common": "domestic cat",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Felis",
+            "species": "Felis catus"
+        }
+    },
+    {
+        "id": "hatate",
+        "character": "Himekaido Hatate",
+        "common": "carrion crow",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Corvidae",
+            "genus": "Corvus",
+            "species": "Corvus corone"
+        }
+    },
+    {
+        "id": "momoyo",
+        "character": "Himemushi Momoyo",
+        "common": "giant centipede",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "class": "Chilopoda",
+            "order": "Scolopendromorpha",
+            "family": "Scolopendridae",
+            "genus": "Scolopendra",
+            "species": "Scolopendra subspinipes"
+        }
+    },
+    {
+        "id": "megumu",
+        "character": "Iizunamaru Megumu",
+        "common": "carrion crow",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Corvidae",
+            "genus": "Corvus",
+            "species": "Corvus corone"
+        }
+    },
+    {
+        "id": "kagerou",
+        "character": "Imaizumi Kagerou",
+        "common": "wolf / domestic dog",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "species": "Canis lupus"
+        }
+    },
+    {
+        "id": "tewi",
+        "character": "Inaba Tewi",
+        "common": "Japanese hare",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Lagomorpha",
+            "family": "Leporidae",
+            "genus": "Lepus",
+            "species": "Lepus brachyurus"
+        }
+    },
+    {
+        "id": "momiji",
+        "character": "Inubashiri Momiji",
+        "common": "wolf / domestic dog",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "species": "Canis lupus"
+        }
+    },
+    {
+        "id": "orin",
+        "character": "Kaenbyou Rin",
+        "common": "domestic cat",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Felis",
+            "species": "Felis catus"
+        }
+    },
+    {
+        "id": "keine",
+        "character": "Kamishirasawa Keine",
+        "common": "domesticated cattle",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Bos",
+            "species": "Bos taurus"
+        }
+    },
+    {
+        "id": "kyouko",
+        "character": "Kasodani Kyouko",
+        "common": "wolf / domestic dog",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "species": "Canis lupus"
+        }
+    },
+    {
+        "id": "yachie",
+        "character": "Kicchou Yachie",
+        "common": "Chinese broad-headed pond turtle",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Reptilia",
+            "order": "Testudines",
+            "family": "Geoemydidae",
+            "genus": "Mauremys",
+            "species": "Mauremys reevesii"
+        }
+    },
+    {
+        "id": "aunn",
+        "character": "Komano Aunn",
+        "common": "wolf / domestic dog",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "species": "Canis lupus"
+        }
+    },
+    {
+        "id": "tsukasa",
+        "character": "Kudamaki Tsukasa",
+        "common": "red fox",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Vulpes",
+            "species": "Vulpes vulpes"
+        }
+    },
+    {
+        "id": "yamame",
+        "character": "Kurodani Yamame",
+        "common": "Joro spider",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "class": "Arachnida",
+            "order": "Araneae",
+            "family": "Nephilidae",
+            "genus": "Trichonephila",
+            "species": "Trichonephila clavata"
+        }
+    },
+    {
+        "id": "saki",
+        "character": "Kurokoma Saki",
+        "common": "horse",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Perissodactyla",
+            "family": "Equidae",
+            "genus": "Equus",
+            "species": "Equus caballus"
+        }
+    },
+    {
+        "id": "enoko",
+        "character": "Mitsugashira Enoko",
+        "common": "wolf / domestic dog",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "species": "Canis lupus"
+        }
+    },
+    {
+        "id": "suwako",
+        "character": "Moriya Suwako",
+        "common": "Japanese tree frog",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Amphibia",
+            "order": "Anura",
+            "family": "Hylidae",
+            "genus": "Dryophytes",
+            "species": "Dryophytes japonicus"
+        }
+    },
+    {
+        "id": "mystia",
+        "character": "Mystia Lorelei",
+        "common": "Eurasian tree sparrow",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Passeridae",
+            "genus": "Passer",
+            "species": "Passer montanus"
+        }
+    },
+    {
+        "id": "iku",
+        "character": "Nagae Iku",
+        "common": "giant oarfish",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Actinopterygii",
+            "order": "Lampriformes",
+            "family": "Regalecidae",
+            "genus": "Regalecus",
+            "species": "Regalecus glesne"
+        }
+    },
+    {
+        "id": "nazrin",
+        "character": "Nazrin",
+        "common": "house mouse",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Muridae",
+            "genus": "Mus",
+            "species": "Mus musculus"
+        }
+    },
+    {
+        "id": "kutaka",
+        "character": "Niwatari Kutaka",
+        "common": "chicken",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Galliformes",
+            "family": "Phasianidae",
+            "genus": "Gallus",
+            "species": "Gallus gallus"
+        }
+    },
+    {
+        "id": "reisen",
+        "character": "Reisen II",
+        "common": "Japanese hare",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Lagomorpha",
+            "family": "Leporidae",
+            "genus": "Lepus",
+            "species": "Lepus brachyurus"
+        }
+    },
+    {
+        "id": "udonge",
+        "character": "Reisen Udongein Inaba",
+        "common": "Japanese hare",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Lagomorpha",
+            "family": "Leporidae",
+            "genus": "Lepus",
+            "species": "Lepus brachyurus"
+        }
+    },
+    {
+        "id": "okuu",
+        "character": "Reiuji Utsuho",
+        "common": "common raven",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Corvidae",
+            "genus": "Corvus",
+            "species": "Corvus corax"
+        }
+    },
+    {
+        "id": "remilia",
+        "character": "Remilia Scarlet",
+        "common": "common vampire bat",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Chiroptera",
+            "family": "Phyllostomidae",
+            "genus": "Desmodus",
+            "species": "Desmodus rotundus"
+        }
+    },
+    {
+        "id": "ringo",
+        "character": "Ringo",
+        "common": "Japanese hare",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Lagomorpha",
+            "family": "Leporidae",
+            "genus": "Lepus",
+            "species": "Lepus brachyurus"
+        }
+    },
+    {
+        "id": "seiran",
+        "character": "Seiran",
+        "common": "Japanese hare",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Lagomorpha",
+            "family": "Leporidae",
+            "genus": "Lepus",
+            "species": "Lepus brachyurus"
+        }
+    },
+    {
+        "id": "aya",
+        "character": "Shameimaru Aya",
+        "common": "carrion crow",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Corvidae",
+            "genus": "Corvus",
+            "species": "Corvus corone"
+        }
+    },
+    {
+        "id": "biten",
+        "character": "Son Biten",
+        "common": "golden snub-nosed monkey",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Rhinopithecus",
+            "species": "Rhinopithecus roxellana"
+        }
+    },
+    {
+        "id": "shou",
+        "character": "Toramaru Shou",
+        "common": "tiger",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "species": "Panthera tigris"
+        }
+    },
+    {
+        "id": "yuuma",
+        "character": "Toutetsu Yuuma",
+        "common": "sheep",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Ovis",
+            "species": "Ovis aries"
+        }
+    },
+    {
+        "id": "urumi",
+        "character": "Ushizaki Urumi",
+        "common": "domesticated cattle",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Bos",
+            "species": "Bos taurus"
+        }
+    },
+    {
+        "id": "wakasagihime",
+        "character": "Wakasagihime",
+        "common": "Japanese smelt",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Actinopterygii",
+            "order": "Osmeriformes",
+            "family": "Osmeridae",
+            "genus": "Hypomesus",
+            "species": "Hypomesus nipponensis"
+        }
+    },
+    {
+        "id": "wriggle",
+        "character": "Wriggle Nightbug",
+        "common": "Genji firefly",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Coleoptera",
+            "family": "Lampyridae",
+            "genus": "Luciola",
+            "species": "Luciola cruciata"
+        }
+    },
+    {
+        "id": "ran",
+        "character": "Yakumo Ran",
+        "common": "red fox",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Vulpes",
+            "species": "Vulpes vulpes"
+        }
+    },
+    {
+        "id": "kanako",
+        "character": "Yasaka Kanako",
+        "common": "Japanese odd-scaled snake",
+        "scientific": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Reptilia",
+            "order": "Squamata",
+            "family": "Xenodermidae",
+            "genus": "Achalinus",
+            "species": "Achalinus spinalis"
+        }
+    }
+]

@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tree-controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tree-controls button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tree-controls button:hover {
+    background-color: #0056b3;
+}
+
+.tree-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tree {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.tree .toggle {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.label {
+    font-size: 0.8em;
+    color: grey; 
+}
+
+.tree .nested {
+    display: none; 
+    padding-left: 20px;
+}
+
+.tree .nested.active {
+    display: block; 
+}
+
+.tree .info {
+    font-style: italic;
+    color: #555;
+}
+
+.tree li {
+    margin-bottom: 10px;
+}
+
+.tree li span {
+    padding: 5px 0;
+}
+
+.tree li span:hover {
+    color: #007BFF;
+}
+
+.tree li .label:hover {
+    color: grey;
+}
