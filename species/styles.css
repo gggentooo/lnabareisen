@@ -1,17 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f0f0f0;
 }
 
 h1 {
     text-align: center;
-}
-
-.yada-yada {
-    text-align: center;
-    margin-bottom: 40px;
 }
 
 .tree-controls {
@@ -20,26 +12,9 @@ h1 {
 }
 
 .tree-controls button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
     cursor: pointer;
-}
-
-.tree-controls button:hover {
-    background-color: #0056b3;
-}
-
-.tree-container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .tree {
@@ -47,51 +22,49 @@ h1 {
     padding-left: 20px;
 }
 
-.tree .toggle {
+.tree li {
+    position: relative;
+}
+
+.tree li ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.tree li .toggle {
     cursor: pointer;
-    font-weight: normal;
-    margin-bottom: 5px;
+    display: inline-block;
 }
 
-.family,
-.genus,
-.species {
-    font-style: italic;
-}
-
-.label,
-.info {
-    font-size: 0.8em;
-    color: grey;
+.tree li .toggle:hover {
+    text-decoration: underline;
 }
 
 .tree .nested {
     display: none;
-    padding-left: 20px;
 }
 
 .tree .nested.active {
     display: block;
 }
 
-.tree li {
-    margin-bottom: 10px;
+.tree li ul li {
+    padding-left: 10px;
+    font-style: normal;
 }
 
-.tree li span {
-    padding: 5px 0;
+.tree li ul li.italic {
+    font-style: italic;
 }
 
-.tree li span:hover {
-    color: #007BFF;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9em;
+    }
 
-.name,
-.name:hover {
-    color: black !important;
-}
-
-.info:hover,
-.tree li .label:hover {
-    color: grey !important;
+    .tree-controls button {
+        padding: 8px;
+        margin: 4px;
+    }
 }

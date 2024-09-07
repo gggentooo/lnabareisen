@@ -1,147 +1,86 @@
-// this is the most fucked up code I have ever written, alas I am too lazy to restructure the JSON
-// by gggentooo, 24/09/06
+// Fetch JSON data and build the tree
+fetch('taxonomy.json')  // Ensure the file is named 'taxonomy.json' in the same directory
+    .then(response => response.json())
+    .then(data => {
+        const treeContainer = document.querySelector('.tree');
+        const kingdomName = Object.keys(data['kingdom'])[0]; // Get the first kingdom key
+        const kingdomData = data['kingdom'][kingdomName];
+        
+        // Dynamically create the kingdom level, with the 'nested' class already set to 'active'
+        const kingdomListItem = createTaxonomyItem('Kingdom', kingdomName);
+        treeContainer.appendChild(kingdomListItem);
+        
+        // Recursively build the tree for the child nodes under the kingdom
+        buildTree(kingdomListItem.querySelector('ul'), kingdomData);
+    });
 
-const populateTree = (data) => {
-    const root = document.querySelector(".tree-container .tree > li > ul");
+// Recursively build the taxonomy tree
+function buildTree(parentElement, node) {
+    Object.keys(node).forEach(level => {
+        if (typeof node[level] === 'object' && !Array.isArray(node[level])) {
+            // Iterate over all children of the current level
+            Object.keys(node[level]).forEach(childNode => {
+                const childData = node[level][childNode];
 
-    // Sort phyla alphabetically
-    const phyla = [...new Set(data.map(entry => entry.scientific.phylum))].sort();
-    phyla.forEach(phylum => {
-        const phylumNode = document.createElement('li');
-        phylumNode.innerHTML = `<span class="label">Phylum:<br></span><span class="toggle">${phylum}</span><ul class="nested"></ul>`;
+                const listItem = createTaxonomyItem(capitalize(level), childNode);
+                parentElement.appendChild(listItem);
 
-        // Sort classes alphabetically within each phylum
-        const classesInPhylum = [...new Set(data.filter(entry => entry.scientific.phylum === phylum)
-            .map(entry => entry.scientific.class))].sort();
-
-        classesInPhylum.forEach(className => {
-            const classNode = findOrCreateBranch(phylumNode, className, 'Class');
-
-            // Sort orders alphabetically within each class
-            const ordersInClass = [...new Set(data.filter(entry => entry.scientific.class === className)
-                .map(entry => entry.scientific.order))].sort();
-
-            ordersInClass.forEach(orderName => {
-                const orderNode = findOrCreateBranch(classNode, orderName, 'Order');
-
-                // Sort families alphabetically within each order
-                const familiesInOrder = [...new Set(data.filter(entry => entry.scientific.order === orderName)
-                    .map(entry => entry.scientific.family))].sort();
-
-                familiesInOrder.forEach(familyName => {
-                    const familyNode = findOrCreateBranch(orderNode, familyName, 'Family');
-
-                    // Sort genera alphabetically within each family
-                    const generaInFamily = [...new Set(data.filter(entry => entry.scientific.family === familyName)
-                        .map(entry => entry.scientific.genus))].sort();
-
-                    generaInFamily.forEach(genusName => {
-                        const genusNode = findOrCreateBranch(familyNode, genusName, 'Genus');
-
-                        // Sort species alphabetically within each genus
-                        const speciesInGenus = data.filter(entry => entry.scientific.genus === genusName)
-                            .sort((a, b) => a.scientific.species.localeCompare(b.scientific.species));
-
-                        speciesInGenus.forEach(entry => {
-                            const speciesNode = findOrCreateBranch(genusNode, entry.scientific.species, 'Species', true);
-
-                            // Add species details (common name and characters)
-                            if (!speciesNode.dataset.populated) {
-                                speciesNode.dataset.populated = true; // To avoid duplicating entries for the same species
-                                const speciesDetails = document.createElement('ul');
-                                speciesDetails.classList.add('nested');
-                                speciesDetails.innerHTML = `
-                                    <li><span class="info">Common Name:<br></span><span class="name">${entry.common}</span></li>
-                                    <li><span class="info">Characters:<br></span><span class="name">${data
-                                        .filter(e => e.scientific.species === entry.scientific.species)
-                                        .map(e => e.character)
-                                        .join('<br>')}</span></li>
-                                `;
-                                speciesNode.appendChild(speciesDetails);
-                            }
-                        });
-                    });
-                });
+                // Recursively call buildTree for the child node
+                buildTree(listItem.querySelector('ul'), childData);
             });
-        });
+        } else if (level === 'species_nerd') {
+            // Handle species-specific information
+            const commonName = node['species_normal'];
+            const characters = node['characters'];
 
-        root.appendChild(phylumNode);
-    });
+            const commonNameInfo = document.createElement('li');
+            commonNameInfo.innerHTML = `<strong>Common name:<br></strong> ${commonName}`;
+            parentElement.appendChild(commonNameInfo);
 
-    // Add toggle functionality
-    document.querySelectorAll('.toggle').forEach(toggle => {
-        toggle.addEventListener('click', function () {
-            const nested = this.nextElementSibling;
-            if (nested) {
-                nested.classList.toggle('active');  // Toggle the 'active' class on click
+            if (characters && Array.isArray(characters)) {
+                const charItem = document.createElement('li');
+                charItem.innerHTML = `<strong>Character(s):<br></strong> ${characters.map(c => c.character).join('<br>')}`;
+                parentElement.appendChild(charItem);
             }
-        });
+        }
     });
-};
+}
 
-// Helper function to find or create a branch
-const findOrCreateBranch = (parentNode, text, level = '', isFinalBranch = false) => {
-    let existingBranch = Array.from(parentNode.querySelectorAll(':scope > ul > li')).find(li => li.firstChild.textContent === text);
+// Create a taxonomy list item with label and name
+function createTaxonomyItem(label, name) {
+    const listItem = document.createElement('li');
+    const toggle = document.createElement('span');
     
-    if (!existingBranch) {
-        existingBranch = document.createElement('li');
-        
-        // Add a class based on the taxonomy level for styling
-        let className = '';
-        if (level === 'Family' || level === 'Genus' || isFinalBranch) {
-            className = level ? level.toLowerCase() : 'species';  // Add class like 'family', 'genus', 'species'
-        }
+    toggle.className = 'toggle';
+    toggle.innerHTML = `<strong>${label}:<br></strong> ${name}`;
+    listItem.appendChild(toggle);
 
-        // Add a label for the taxonomy level (e.g., Class, Order, etc.)
-        const label = level ? `<span class="label">${level}:<br></span>` : '';
-        
-        // Add the toggle span with the text for the branch, with a specific class
-        existingBranch.innerHTML = `${label}<span class="toggle ${className}">${text}</span>`;
-        
-        if (!isFinalBranch) {
-            existingBranch.innerHTML += `<ul class="nested"></ul>`;
-        }
+    // Create a nested ul to contain child elements
+    const childList = document.createElement('ul');
+    childList.classList.add('nested'); // Keep nested hidden by default
+    listItem.appendChild(childList);
 
-        const parentList = parentNode.querySelector(':scope > ul') || document.createElement('ul');
-        parentList.classList.add('nested');
-        parentList.appendChild(existingBranch);
-        parentNode.appendChild(parentList);
-    }
-
-    return existingBranch;
-};
-
-
-// Function to open all branches
-const openAll = () => {
-    document.querySelectorAll('.nested').forEach(branch => {
-        branch.classList.add('active');  // Make all branches visible
+    // Add click event to toggle visibility of children
+    toggle.addEventListener('click', function() {
+        childList.classList.toggle('active');
     });
-};
 
-// Function to close all branches
-const closeAll = () => {
-    document.querySelectorAll('.nested').forEach(branch => {
-        branch.classList.remove('active');  // Hide all branches
-    });
-};
+    return listItem;
+}
 
-// Fetch data from species.json and populate the tree
-const loadTreeData = async () => {
-    try {
-        const response = await fetch('species.json');
-        const data = await response.json();
-        populateTree(data);
-    } catch (error) {
-        console.error('Error loading JSON data:', error);
-    }
-};
+// Helper function to capitalize taxonomic levels
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
-// Load the data when the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", () => {
-    loadTreeData();
+// Open all branches
+document.getElementById('open-all').addEventListener('click', function() {
+    const nestedLists = document.querySelectorAll('.tree-container .nested');
+    nestedLists.forEach(list => list.classList.add('active'));
+});
 
-    // Attach event listeners to Open/Close All buttons
-    document.getElementById('open-all').addEventListener('click', openAll);
-    document.getElementById('close-all').addEventListener('click', closeAll);
+// Close all branches
+document.getElementById('close-all').addEventListener('click', function() {
+    const nestedLists = document.querySelectorAll('.tree-container .nested');
+    nestedLists.forEach(list => list.classList.remove('active'));
 });

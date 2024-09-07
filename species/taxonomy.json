@@ -1,0 +1,642 @@
+{
+    "kingdom": {
+        "Animalia": {
+            "phylum": {
+                "Arthropoda": {
+                    "class": {
+                        "Arachnida": {
+                            "order": {
+                                "Araneae": {
+                                    "family": {
+                                        "Nephilidae": {
+                                            "genus": {
+                                                "Trichonephila": {
+                                                    "species": {
+                                                        "Trichonephila clavata": {
+                                                            "species_nerd": "Trichonephila clavata",
+                                                            "species_normal": "Joro Spider",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Kurodani Yamame",
+                                                                    "id": "kurodaniyamame"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "Chilopoda": {
+                            "order": {
+                                "Scolopendromorpha": {
+                                    "family": {
+                                        "Scolopendridae": {
+                                            "genus": {
+                                                "Scolopendra": {
+                                                    "species": {
+                                                        "Scolopendra subspinipes": {
+                                                            "species_nerd": "Scolopendra subspinipes",
+                                                            "species_normal": "Giant Centipede",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Himemushi Momoyo",
+                                                                    "id": "himemushimomoyo"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "Insecta": {
+                            "order": {
+                                "Coleoptera": {
+                                    "family": {
+                                        "Lampyridae": {
+                                            "genus": {
+                                                "Luciola": {
+                                                    "species": {
+                                                        "Luciola cruciata": {
+                                                            "species_nerd": "Luciola cruciata",
+                                                            "species_normal": "Genji Firefly",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Wriggle Nightbug",
+                                                                    "id": "wrigglenightbug"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "Lepidoptera": {
+                                    "family": {
+                                        "Papilionidae": {
+                                            "genus": {
+                                                "Papilio": {
+                                                    "species": {
+                                                        "Papilio xuthus": {
+                                                            "species_nerd": "Papilio xuthus",
+                                                            "species_normal": "Asian Swallowtail",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Eternity Larva",
+                                                                    "id": "eternitylarva"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "Chordata": {
+                    "class": {
+                        "Actinopterygii": {
+                            "order": {
+                                "Lampriformes": {
+                                    "family": {
+                                        "Regalecidae": {
+                                            "genus": {
+                                                "Regalecus": {
+                                                    "species": {
+                                                        "Regalecus glesne": {
+                                                            "species_nerd": "Regalecus glesne",
+                                                            "species_normal": "Giant Oarfish",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Nagae Iku",
+                                                                    "id": "nagaeiku"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "Osmeriformes": {
+                                    "family": {
+                                        "Osmeridae": {
+                                            "genus": {
+                                                "Hypomesus": {
+                                                    "species": {
+                                                        "Hypomesus nipponensis": {
+                                                            "species_nerd": "Hypomesus nipponensis",
+                                                            "species_normal": "Japanese Smelt",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Wakasagihime",
+                                                                    "id": "wakasagihime"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "Amphibia": {
+                            "order": {
+                                "Anura": {
+                                    "family": {
+                                        "Hylidae": {
+                                            "genus": {
+                                                "Dryophytes": {
+                                                    "species": {
+                                                        "Dryophytes japonicus": {
+                                                            "species_nerd": "Dryophytes japonicus",
+                                                            "species_normal": "Japanese Tree Frog",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Moriya Suwako",
+                                                                    "id": "moriyasuwako"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "Aves": {
+                            "order": {
+                                "Galliformes": {
+                                    "family": {
+                                        "Phasianidae": {
+                                            "genus": {
+                                                "Gallus": {
+                                                    "species": {
+                                                        "Gallus gallus": {
+                                                            "species_nerd": "Gallus gallus",
+                                                            "species_normal": "Chicken",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Niwatari Kutaka",
+                                                                    "id": "niwatarikutaka"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "Passeriformes": {
+                                    "family": {
+                                        "Corvidae": {
+                                            "genus": {
+                                                "Corvus": {
+                                                    "species": {
+                                                        "Corvus corax": {
+                                                            "species_nerd": "Corvus corax",
+                                                            "species_normal": "Common Raven",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Reiuji Utsuho",
+                                                                    "id": "reiujiutsuho"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "Corvus corone": {
+                                                            "species_nerd": "Corvus corone",
+                                                            "species_normal": "Carrion Crow",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Himekaido Hatate",
+                                                                    "id": "himekaidohatate"
+                                                                },
+                                                                {
+                                                                    "character": "Iizunamaru Megumu",
+                                                                    "id": "iizunamarumegumu"
+                                                                },
+                                                                {
+                                                                    "character": "Shameimaru Aya",
+                                                                    "id": "shameimaruaya"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "Passeridae": {
+                                            "genus": {
+                                                "Passer": {
+                                                    "species": {
+                                                        "Passer montanus": {
+                                                            "species_nerd": "Passer montanus",
+                                                            "species_normal": "Eurasian Tree Sparrow",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Mystia Lorelei",
+                                                                    "id": "mystialorelei"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "Mammalia": {
+                            "order": {
+                                "Artiodactyla": {
+                                    "family": {
+                                        "Bovidae": {
+                                            "genus": {
+                                                "Bos": {
+                                                    "species": {
+                                                        "Bos taurus": {
+                                                            "species_nerd": "Bos taurus",
+                                                            "species_normal": "Domesticated Cattle",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Kamishirasawa Keine",
+                                                                    "id": "kamishirasawakeine"
+                                                                },
+                                                                {
+                                                                    "character": "Ushizaki Urumi",
+                                                                    "id": "ushizakiurumi"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                "Ovis": {
+                                                    "species": {
+                                                        "Ovis aries": {
+                                                            "species_nerd": "Ovis aries",
+                                                            "species_normal": "Sheep",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Toutetsu Yuuma",
+                                                                    "id": "toutetsuyuuma"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "Carnivora": {
+                                    "family": {
+                                        "Canidae": {
+                                            "genus": {
+                                                "Canis": {
+                                                    "species": {
+                                                        "Canis lupus": {
+                                                            "species_nerd": "Canis lupus",
+                                                            "species_normal": "Wolf / Domestic Dog",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Imaizumi Kagerou",
+                                                                    "id": "imaizumikagerou"
+                                                                },
+                                                                {
+                                                                    "character": "Inubashiri Momiji",
+                                                                    "id": "inubashirimomiji"
+                                                                },
+                                                                {
+                                                                    "character": "Kasodani Kyouko",
+                                                                    "id": "kasodanikyouko"
+                                                                },
+                                                                {
+                                                                    "character": "Komano Aunn",
+                                                                    "id": "komanoaunn"
+                                                                },
+                                                                {
+                                                                    "character": "Mitsugashira Enoko",
+                                                                    "id": "mitsugashiraenoko"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                "Nyctereutes": {
+                                                    "species": {
+                                                        "Nyctereutes procyonoides": {
+                                                            "species_nerd": "Nyctereutes procyonoides",
+                                                            "species_normal": "Raccoon Dog",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Futatsuiwa Mamizou",
+                                                                    "id": "futatsuiwamamizou"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                "Vulpes": {
+                                                    "species": {
+                                                        "Vulpes vulpes": {
+                                                            "species_nerd": "Vulpes vulpes",
+                                                            "species_normal": "Red Fox",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Kudamaki Tsukasa",
+                                                                    "id": "kudamakitsukasa"
+                                                                },
+                                                                {
+                                                                    "character": "Yakumo Ran",
+                                                                    "id": "yakumoran"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "Felidae": {
+                                            "genus": {
+                                                "Felis": {
+                                                    "species": {
+                                                        "Felis catus": {
+                                                            "species_nerd": "Felis catus",
+                                                            "species_normal": "Domestic Cat",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Chen",
+                                                                    "id": "chen"
+                                                                },
+                                                                {
+                                                                    "character": "Gotokuji Mike",
+                                                                    "id": "gotokujimike"
+                                                                },
+                                                                {
+                                                                    "character": "Kaenbyou Rin",
+                                                                    "id": "kaenbyourin"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                "Panthera": {
+                                                    "species": {
+                                                        "Panthera tigris": {
+                                                            "species_nerd": "Panthera tigris",
+                                                            "species_normal": "Tiger",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Toramaru Shou",
+                                                                    "id": "toramarushou"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "Chiroptera": {
+                                    "family": {
+                                        "Phyllostomidae": {
+                                            "genus": {
+                                                "Desmodus": {
+                                                    "species": {
+                                                        "Desmodus rotundus": {
+                                                            "species_nerd": "Desmodus rotundus",
+                                                            "species_normal": "Common Vampire Bat",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Flandre Scarlet",
+                                                                    "id": "flandrescarlet"
+                                                                },
+                                                                {
+                                                                    "character": "Remilia Scarlet",
+                                                                    "id": "remiliascarlet"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "Lagomorpha": {
+                                    "family": {
+                                        "Leporidae": {
+                                            "genus": {
+                                                "Lepus": {
+                                                    "species": {
+                                                        "Lepus brachyurus": {
+                                                            "species_nerd": "Lepus brachyurus",
+                                                            "species_normal": "Japanese Hare",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Inaba Tewi",
+                                                                    "id": "inabatewi"
+                                                                },
+                                                                {
+                                                                    "character": "Reisen II",
+                                                                    "id": "reisenii"
+                                                                },
+                                                                {
+                                                                    "character": "Reisen Udongein Inaba",
+                                                                    "id": "reisenudongeininaba"
+                                                                },
+                                                                {
+                                                                    "character": "Ringo",
+                                                                    "id": "ringo"
+                                                                },
+                                                                {
+                                                                    "character": "Seiran",
+                                                                    "id": "seiran"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "Perissodactyla": {
+                                    "family": {
+                                        "Equidae": {
+                                            "genus": {
+                                                "Equus": {
+                                                    "species": {
+                                                        "Equus caballus": {
+                                                            "species_nerd": "Equus caballus",
+                                                            "species_normal": "Horse",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Kurokoma Saki",
+                                                                    "id": "kurokomasaki"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "Tapiridae": {
+                                            "genus": {
+                                                "Acrocodia": {
+                                                    "species": {
+                                                        "Tapirus indicus": {
+                                                            "species_nerd": "Tapirus indicus",
+                                                            "species_normal": "Malay Tapir",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Doremi Sweet",
+                                                                    "id": "doremisweet"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "Primates": {
+                                    "family": {
+                                        "Cercopithecidae": {
+                                            "genus": {
+                                                "Rhinopithecus": {
+                                                    "species": {
+                                                        "Rhinopithecus roxellana": {
+                                                            "species_nerd": "Rhinopithecus roxellana",
+                                                            "species_normal": "Golden Snub-nosed Monkey",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Son Biten",
+                                                                    "id": "sonbiten"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "Hominidae": {
+                                            "genus": {
+                                                "Homo": {
+                                                    "species": {
+                                                        "Homo sapiens": {
+                                                            "species_nerd": "Homo sapiens",
+                                                            "species_normal": "Human",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Hakurei Reimu (and others, and you, probably)",
+                                                                    "id": "hakureireimu"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "Rodentia": {
+                                    "family": {
+                                        "Muridae": {
+                                            "genus": {
+                                                "Mus": {
+                                                    "species": {
+                                                        "Mus musculus": {
+                                                            "species_nerd": "Mus musculus",
+                                                            "species_normal": "House Mouse",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Nazrin",
+                                                                    "id": "nazrin"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "Reptilia": {
+                            "order": {
+                                "Squamata": {
+                                    "family": {
+                                        "Xenodermidae": {
+                                            "genus": {
+                                                "Achalinus": {
+                                                    "species": {
+                                                        "Achalinus spinalis": {
+                                                            "species_nerd": "Achalinus spinalis",
+                                                            "species_normal": "Japanese Odd-scaled Snake",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Yasaka Kanako",
+                                                                    "id": "yasakakanako"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "Testudines": {
+                                    "family": {
+                                        "Geoemydidae": {
+                                            "genus": {
+                                                "Mauremys": {
+                                                    "species": {
+                                                        "Mauremys reevesii": {
+                                                            "species_nerd": "Mauremys reevesii",
+                                                            "species_normal": "Chinese Broad-headed Pond Turtle",
+                                                            "characters": [
+                                                                {
+                                                                    "character": "Kicchou Yachie",
+                                                                    "id": "kicchouyachie"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
