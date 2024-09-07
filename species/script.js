@@ -34,12 +34,12 @@ function buildTree(parentElement, node) {
             const characters = node['characters'];
 
             const commonNameInfo = document.createElement('li');
-            commonNameInfo.innerHTML = `<strong>Common name:<br></strong> ${commonName}`;
+            commonNameInfo.innerHTML = `<a class="taxlevel">Common name:<br></a> ${commonName}`;
             parentElement.appendChild(commonNameInfo);
 
             if (characters && Array.isArray(characters)) {
                 const charItem = document.createElement('li');
-                charItem.innerHTML = `<strong>Character(s):<br></strong> ${characters.map(c => c.character).join('<br>')}`;
+                charItem.innerHTML = `<a class="taxlevel">Character(s):<br></a> ${characters.map(c => c.character).join('<br>')}`;
                 parentElement.appendChild(charItem);
             }
         }
@@ -51,8 +51,8 @@ function createTaxonomyItem(label, name) {
     const listItem = document.createElement('li');
     const toggle = document.createElement('span');
     
-    toggle.className = 'toggle';
-    toggle.innerHTML = `<strong>${label}:<br></strong> ${name}`;
+    toggle.className = `toggle ${label}`;
+    toggle.innerHTML = `<a class="taxlevel ${label}">${label}<br></a> ${name}`;
     listItem.appendChild(toggle);
 
     // Create a nested ul to contain child elements
