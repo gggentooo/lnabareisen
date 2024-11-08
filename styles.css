@@ -16,6 +16,8 @@ body.main {
     padding: 40px;
     border-radius: 8px;
     border: 1px dotted cadetblue;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -35,4 +37,8 @@ h6 {
 
 a[href], a[href]:visited {
     color: cadetblue;
+}
+
+canvas {
+    align-self: center;
 }
