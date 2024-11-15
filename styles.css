@@ -8,6 +8,7 @@ body.main {
     flex-direction: column;
     gap: 36px;
     align-items: center;
+    max-width: 100vw;
 }
 
 .inner_1440 {
@@ -35,8 +36,17 @@ h6 {
     text-align: center;
 }
 
+.middle img {
+    width: 400px;
+}
+
 a[href], a[href]:visited {
     color: cadetblue;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
 }
 
 canvas {
