@@ -52,3 +52,24 @@ em {
 canvas {
     align-self: center;
 }
+
+
+@media screen and (max-width: 768px) {
+    body.main {
+        font-size: 14px;
+    }
+
+    .inner_1440 {
+        max-width: 85vw;
+        padding: 16px;
+    }
+
+    .middle {
+        display: flex;
+        align-items: center;
+    }
+
+    .middle img {
+        max-width: 75vw;
+    }
+}
