@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LNABA.REISEN</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="./ggjsonw.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <script src="../../lib/p5.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body class="main">
+    <section class="inner_1440 top">
+        <h1>ggJSONw</h1>
+        <h6>2024-12-16, an hour and half before lunch, gggentooo</h6>
+        <p><a href="../../">Go back to Main</a> | <a href="../">Go back to List of Things</a></p>
+    </section>
+    <section class="inner_1440 middle">
+        <h2>What is ggJSONw?</h2>
+        <p>ggJSONw is a web-based tool for editing array-oriented JSON files, based on templates.</p>
+        <h2>How do I use it?</h2>
+        <p>You need two files: a template file, and a target file. Both must be valid JSON files.</p>
+    </section>
+    <section class="inner_1440 middle">
+        <div class="ggjsonw startarea">
+            <div class="selectarea template">
+                <h3>Template JSON</h3>
+                <div class="radio_wrapper">
+                    <div class="radio_elem">
+                        <input type="radio" id="template_type_select" name="template_type" value="select">
+                        <label for="template_type_select">Load from existing file</label>
+                    </div>
+                    <div class="radio_elem">
+                        <input type="radio" id="template_type_create" name="template_type" value="create">
+                        <label for="template_type_create">Create new template</label>
+                    </div>
+                </div>
+                <div class="button_area disabled">
+                    <button>Select Template JSON</button>
+                    <p class="filepath" id="fp_template">No file selected</p>
+                </div>
+            </div>
+            <div class="selectarea target">
+                <h3>Target JSON</h3>
+                <div class="radio_wrapper">
+                    <div class="radio_elem">
+                        <input type="radio" id="target_type_select" name="target_type" value="select">
+                        <label for="target_type_select">Select existing file</label>
+                    </div>
+                    <div class="radio_elem">
+                        <input type="radio" id="target_type_create" name="target_type" value="create">
+                        <label for="target_type_create">Create new file</label>
+                    </div>
+                </div>
+                <div class="button_area disabled">
+                    <button>Select Target JSON</button>
+                    <p class="filepath" id="fp_target">No file selected</p>
+                </div>
+                <div class="fninput_area disabled">
+                    <input type="text" placeholder="Enter output filename...">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -53,6 +53,21 @@ canvas {
     align-self: center;
 }
 
+button {
+    font-family: "Source Sans 3", sans-serif;
+    width: 160px;
+    padding: 8px 12px;
+    border: 2px solid cadetblue;
+    color: cadetblue;
+    background: white;
+    border-radius: 12px;
+    transition: 0.2s;
+}
+button:hover {
+    color: white;
+    background: cadetblue;
+}
+
 
 @media screen and (max-width: 768px) {
     body.main {
