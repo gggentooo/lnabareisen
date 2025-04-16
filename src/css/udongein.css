@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 h1 {
     font-size: 2em;
 }
-p.datestamp {
+.datestamp {
     font-family: 'Noto Sans Mono', sans-serif;
     font-size: 0.8em;
     color: var(--sub-text-color);
@@ -53,7 +53,8 @@ h3 {
     position: relative;
     margin-top: 16px;
 }
-h2+h3 {
+h2+h3,
+h3:first-child {
     margin-top: 0;
 }
 h3::before {
@@ -115,10 +116,22 @@ blockquote::before {
     top: 0;
 }
 ul {
+    max-width: 720px;
     position: relative;
     color: var(--main-text-color);
     list-style-position: inside;
     list-style-type: "◈  ";
+}
+li {
+    padding: 0.5em 0;
+}
+li:not(:last-child) {
+    border-bottom: 2px dotted var(--sub-background-color);
+}
+li>.datestamp::after {
+    content: '-';
+    display: inline-block;
+    padding: 0 4px;
 }
 a {
     font-family: 'Noto Sans Mono', sans-serif;
