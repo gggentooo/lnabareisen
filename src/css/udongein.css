@@ -81,6 +81,9 @@ q {
     font-style: italic;
     font-weight: bold;
 }
+small {
+    color: var(--sub-text-color);
+}
 code {
     font-family: 'Noto Sans Mono', sans-serif;
     padding: 2px 8px;
@@ -145,6 +148,19 @@ button:hover {
 *:focus {
     outline: 2px solid var(--main-background-color);
     box-shadow: 0 0 2px 4px var(--accent-color-blue);
+}
+*:target {
+    animation-name: flash_accent;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes flash_accent {
+    from {
+        color: var(--accent-color-blue);
+    }
+    to {
+        color: var(--main-text-color);
+    }
 }
 
 /* Wrappers and layouts */
