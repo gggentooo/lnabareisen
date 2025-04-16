@@ -52,7 +52,7 @@ h3 {
     line-height: 100%;
     position: relative;
 }
-h3:not(:first-of-type) {
+h3:not(:first-child) {
     margin-top: 16px;
 }
 h3::before {
