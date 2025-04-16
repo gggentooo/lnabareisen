@@ -167,6 +167,12 @@ section {
     border-radius: 6px;
     border: 3px double var(--sub-text-color);
 }
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.8em;
+    padding-bottom: 8px;
+}
 
 /* Mobile layout */
 @media screen and (max-width: 768px) {
