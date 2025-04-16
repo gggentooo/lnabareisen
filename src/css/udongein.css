@@ -51,9 +51,10 @@ p.datestamp {
 h3 {
     line-height: 100%;
     position: relative;
-}
-h3:not(:first-child) {
     margin-top: 16px;
+}
+h2+h3 {
+    margin-top: 0;
 }
 h3::before {
     content: '';
@@ -93,7 +94,7 @@ code {
     white-space: nowrap;
 }
 blockquote {
-    max-width: 840px;
+    max-width: 720px;
     align-self: center;
     padding: 8px 16px;
     border-radius: 4px;
@@ -175,7 +176,7 @@ body {
 }
 section {
     width: 100%;
-    max-width: 1440px;
+    max-width: 960px;
     display: flex;
     flex-direction: column;
     gap: 1em;
