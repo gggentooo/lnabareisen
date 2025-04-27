@@ -5,10 +5,15 @@ gggentooo, 250416
 functions used in all pages
 */
 
-function switch_themes() {
-    document.getElementById('theme_toggle').onclick(() => {
-        document.documentElement.toggleAttribute("dark");
-    })
+function toggleDark() {
+    let isDark = document.documentElement.classList.toggle("dark");
+    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        document.documentElement.classList.add('dark');
+    }
+});
 
 
