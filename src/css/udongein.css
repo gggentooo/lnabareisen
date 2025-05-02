@@ -69,6 +69,7 @@ h3::before {
 }
 p {
     line-height: 160%;
+    white-space: pre-line;
 }
 em {
     padding: 0 4px;
