@@ -16,4 +16,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 });
 
+function langOpenClose(target_lang) {
+    var target_elems = document.getElementsByClassName(target_lang);
+    for (var i = 0; i < target_elems.length; i++) {
+        target_elems[i].classList.toggle("hide");
+    }
+}
+
 

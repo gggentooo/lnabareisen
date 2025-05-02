@@ -248,6 +248,11 @@ footer {
     padding-bottom: 1em;
 }
 
+/* Functionality */
+.hide {
+    display: none;
+}
+
 /* Mobile layout */
 @media screen and (max-width: 768px) {
     html {
