@@ -211,8 +211,14 @@ section {
     flex-direction: row;
     gap: 1em;
 }
-.horizontal_wrapper>* {
+.horizontal_wrapper>.horizontal_element {
     width: 100%;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    border: 1px dotted var(--sub-text-color);
+}
+.horizontal_wrapper>.horizontal_element li {
+    font-size: 0.8em;
 }
 header {
     display: flex;
