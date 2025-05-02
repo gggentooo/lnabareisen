@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     color: var(--main-text-color);
 }
 h1 {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 .datestamp {
     font-family: 'Noto Sans Mono', sans-serif;
@@ -96,7 +96,7 @@ code {
 }
 blockquote {
     max-width: 720px;
-    align-self: center;
+    /* align-self: center; */
     padding: 8px 16px;
     border-radius: 4px;
     font-family: 'Noto Serif', serif;
@@ -122,6 +122,10 @@ ul {
     list-style-position: inside;
     list-style-type: "◈  ";
 }
+ul ul {
+    padding-left: 2em;
+    list-style-type: "⟐  ";
+}
 li {
     padding: 0.5em 0;
 }
@@ -145,13 +149,13 @@ a:hover {
     color: var(--accent-color);
 }
 button {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 0.9em;
+    font-family: 'Noto Sans Mono', sans-serif;
+    font-size: 0.8em;
     color: var(--main-text-color);
-    background: none;
+    background: var(--main-background-color);
     padding: 4px 8px;
     border-radius: 4px;
-    border: 2px solid var(--main-text-color);
+    border: 1.5px solid var(--main-text-color);
     cursor: pointer;
     width: fit-content;
 }
@@ -197,15 +201,52 @@ section {
     border-radius: 6px;
     border: 3px double var(--sub-text-color);
 }
+header {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: baseline;
+    padding: 1em 1.5em;
+    border-radius: 6px;
+    border: 1px dotted var(--sub-text-color);
+}
+header .pagetitle {
+    font-family: 'Noto Sans Mono', sans-serif;
+    font-size: 1.2em;
+    color: var(--main-text-color);
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    gap: 1em;
+    padding-left: 2em;
+}
+nav>*::before {
+    content: '⟐';
+    display: inline-block;
+    padding-right: 1em;
+}
+header>button.darkmode {
+    margin-left: auto;
+}
 footer {
     font-size: 0.8em;
-    padding-bottom: 8px;
+    padding-bottom: 1em;
 }
 
 /* Mobile layout */
 @media screen and (max-width: 768px) {
     html {
         font-size: 14px;
+    }
+    header {
+        gap: 0.5em;
+    }
+    nav {
+        width: 100%;
+        padding: 0;
     }
 }
 
