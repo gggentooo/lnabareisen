@@ -211,6 +211,9 @@ section {
     flex-direction: row;
     gap: 1em;
 }
+.horizontal_wrapper>* {
+    width: 100%;
+}
 header {
     display: flex;
     flex-wrap: wrap;
@@ -247,6 +250,14 @@ footer {
     font-size: 0.8em;
     padding-bottom: 1em;
 }
+.lang_buttons {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: -1em 0;
+}
 
 /* Functionality */
 .hide {
@@ -266,6 +277,9 @@ footer {
         padding: 0;
     }
     .horizontal_wrapper {
+        flex-direction: column;
+    }
+    .lang_buttons {
         flex-direction: column;
     }
 }
