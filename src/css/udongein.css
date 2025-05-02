@@ -71,7 +71,7 @@ p {
     line-height: 160%;
 }
 em {
-    padding: 2px 4px;
+    padding: 0 4px;
     background-color: var(--inverted-background-color);
     color: var(--inverted-text-color);
     font-style: normal;
@@ -96,7 +96,6 @@ code {
 }
 blockquote {
     max-width: 720px;
-    /* align-self: center; */
     padding: 8px 16px;
     border-radius: 4px;
     font-family: 'Noto Serif', serif;
@@ -191,9 +190,14 @@ body {
     gap: 1.5em;
     padding: 3em 1.5em;
 }
-section {
+section,
+header,
+footer,
+.maxwidth_wrapper {
     width: 100%;
-    max-width: 960px;
+    max-width: 1200px;
+}
+section {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -201,16 +205,19 @@ section {
     border-radius: 6px;
     border: 3px double var(--sub-text-color);
 }
+.horizontal_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
 header {
-    width: 100%;
-    max-width: 960px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: baseline;
     padding: 1em 1.5em;
     border-radius: 6px;
-    border: 1px dotted var(--sub-text-color);
+    border: 1px dashed var(--sub-text-color);
 }
 header .pagetitle {
     font-family: 'Noto Sans Mono', sans-serif;
@@ -232,6 +239,10 @@ header>button.darkmode {
     margin-left: auto;
 }
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-size: 0.8em;
     padding-bottom: 1em;
 }
@@ -247,6 +258,9 @@ footer {
     nav {
         width: 100%;
         padding: 0;
+    }
+    .horizontal_wrapper {
+        flex-direction: column;
     }
 }
 
