@@ -282,6 +282,9 @@ footer {
         width: 100%;
         padding: 0;
     }
+    nav>*::before {
+        padding-right: 0.5em;
+    }
     .horizontal_wrapper {
         flex-direction: column;
     }
@@ -289,5 +292,3 @@ footer {
         flex-direction: column;
     }
 }
-
-

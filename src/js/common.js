@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <span class="pagetitle" onclick="location.href='https://lnaba.reisen/'">lnaba.reisen</span>
         <button class="darkmode" onclick="toggleDark()">Toggle Dark Mode</button>
         <nav>
-            <a href="https://lnaba.reisen/">Main</a>
+            <a href="https://lnaba.reisen/">Home</a>
             <a href="https://lnaba.reisen/now">Now</a>
             <a href="https://lnaba.reisen/thoughts">Thoughts</a>
             <a href="https://lnaba.reisen/things">Things</a>
