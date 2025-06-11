@@ -14,17 +14,17 @@
 /* Fonts */
 @font-face {
     font-family: "Naru";
-    src: url("../fonts/naru_thin.woff2") format("woff2");
+    src: url("../fonts/Naru-thin.woff2") format("woff2");
     font-weight: 300;
 }
 @font-face {
     font-family: "Naru";
-    src: url("../fonts/naru_medium.woff2") format("woff2");
+    src: url("../fonts/Naru-regular.woff2") format("woff2");
     font-weight: 500;
 }
 @font-face {
     font-family: "Naru";
-    src: url("../fonts/naru_bold.woff2") format("woff2");
+    src: url("../fonts/Naru-bold.woff2") format("woff2");
     font-weight: 700;
 }
 @font-face {
