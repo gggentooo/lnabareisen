@@ -11,6 +11,23 @@
     padding: 0;
 }
 
+/* Fonts */
+@font-face {
+    font-family: "Naru";
+    src: url("../fonts/naru_thin.woff2");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Naru";
+    src: url("../fonts/naru_medium.woff2");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Naru";
+    src: url("../fonts/naru_bold.woff2");
+    font-weight: 700;
+}
+
 /* Colors */
 html {
     --main-background-color: #eee;
@@ -44,7 +61,7 @@ h1 {
     font-size: 1.8em;
 }
 .datestamp {
-    font-family: 'Noto Sans Mono', sans-serif;
+    font-weight: 300;
     font-size: 0.8em;
     color: var(--sub-text-color);
 }
@@ -79,7 +96,7 @@ em {
     font-weight: bold;
 }
 q {
-    font-family: 'Noto Serif', serif;
+    font-weight: 700;
     color: var(--sub-text-color);
     font-style: italic;
     font-weight: bold;
@@ -88,7 +105,7 @@ small {
     color: var(--sub-text-color);
 }
 code {
-    font-family: 'Noto Sans Mono', sans-serif;
+    font-weight: 300;
     padding: 2px 8px;
     border-radius: 4px;
     background-color: var(--sub-background-color);
@@ -99,7 +116,7 @@ blockquote {
     max-width: 720px;
     padding: 8px 16px;
     border-radius: 4px;
-    font-family: 'Noto Serif', serif;
+    font-weight: 700;
     background-color: var(--sub-background-color-mild);
     color: var(--main-text-color);
     font-style: italic;
@@ -138,7 +155,7 @@ li>.datestamp::after {
     padding: 0 4px;
 }
 a {
-    font-family: 'Noto Sans Mono', sans-serif;
+    font-weight: 300;
     color: var(--main-text-color);
     font-size: 0.9em;
 }
@@ -149,7 +166,7 @@ a:hover {
     color: var(--accent-color);
 }
 button {
-    font-family: 'Noto Sans Mono', sans-serif;
+    font-weight: 300;
     font-size: 0.8em;
     color: var(--main-text-color);
     background: var(--main-background-color);
@@ -183,7 +200,9 @@ button:hover {
 
 /* Wrappers and layouts */
 body {
-    font-family: 'Noto Sans', 'Noto Sans KR', 'Noto Sans JP', 'Verdana', sans-serif;
+    font-family: 'Naru', 'Verdana', sans-serif;
+    font-weight: 500;
+    text-underline-offset: 0.2em;
     background-color: var(--main-background-color);
     display: flex;
     flex-direction: column;
@@ -230,7 +249,7 @@ header {
     border: 1px dashed var(--sub-text-color);
 }
 header .pagetitle {
-    font-family: 'Noto Sans Mono', sans-serif;
+    font-weight: 300;
     font-size: 1.2em;
     color: var(--main-text-color);
     cursor: pointer;
