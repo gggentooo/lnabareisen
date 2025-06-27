@@ -34,7 +34,7 @@
 }
 @font-face {
     font-family: "M Plus";
-    src: url("../fonts/Mplus1-Regular.woff2") format("woff2");
+    src: url("../fonts/Mplus1-500.woff2") format("woff2");
     font-weight: 500;
 }
 @font-face {
@@ -159,7 +159,7 @@ ul ul {
     list-style-type: "⟐  ";
 }
 li {
-    padding: 0.5em 0;
+    padding: 0.2em 0;
 }
 li:not(:last-child) {
     border-bottom: 2px dotted var(--sub-background-color);
@@ -170,9 +170,10 @@ li>.datestamp::after {
     padding: 0 4px;
 }
 a {
-    font-weight: 300;
-    color: var(--main-text-color);
+    font-weight: 500;
+    color: var(--sub-text-color);
     font-size: 0.9em;
+    text-decoration-style: dashed;
 }
 a::after {
     content: '⇒';
@@ -264,7 +265,7 @@ header {
     border: 1px dashed var(--sub-text-color);
 }
 header .pagetitle {
-    font-weight: 300;
+    font-weight: 700;
     font-size: 1.2em;
     color: var(--main-text-color);
     cursor: pointer;
