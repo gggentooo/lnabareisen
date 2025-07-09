@@ -1,8 +1,14 @@
 [
     {
-        "id": "sample-thought-1",
-        "title": "A Sample Thought",
-        "date": "0000-00-00",
-        "author": "D"
+        "category": "Uncategorized",
+        "entries": [
+            {
+                "id": "sample-thought-1",
+                "title": "A Sample Thought",
+                "date": "0000-00-00",
+                "author": "D",
+                "tags": []
+            }
+        ]
     }
 ]
