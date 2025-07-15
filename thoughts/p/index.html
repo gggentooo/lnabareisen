@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="lnaba.reisen" />
+    <meta property="og:description" content="Dawn's personal website">
+    <meta property="og:site_name" content="lnaba.reisen">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="lnaba.reisen" />
+    <title>lnaba.reisen</title>
+    <link rel="icon" href="../../src/img/favicon.ico" type="image/x-icon">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../../src/css/udongein.css">
+    <!-- scripts -->
+    <script src="../../src/js/common.js"></script>
+    <script src="../../src/js/loadcontent.js"></script>
+</head>
+
+<body class="subpage">
+    <header>
+    </header>
+
+    <section id="content" class="nopadding">
+    </section>
+
+    <footer>
+    </footer>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+        const result = loadPageContent(id).then(v => {
+            if (v === -1) {
+                window.location.replace("https://lnaba.reisen/404.html");
+            }
+            document.getElementById("content").innerHTML = v
+        });
+    </script>
+</body>
+
+</html>

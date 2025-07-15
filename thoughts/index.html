@@ -26,20 +26,15 @@
         <h1>Thoughts</h1>
     </section>
 
-    <section>
-        <h2>Uncategorized</h2>
-        <small>Nothing here, yet!</small>
-        <ul id="list-uncategorized"></ul>
-        <!-- <ul>
-            <li>
-                <span class="datestamp">250502</span>
-                <a href="./ko-idea_language_translation/">생각, 언어, 번역</a>
-            </li>
-        </ul> -->
+    <section id="lists">
     </section>
 
     <footer>
     </footer>
+
+    <script>
+        populateMenu("./list.json").then(v => document.getElementById("lists").innerHTML = v);
+    </script>
 </body>
 
 </html>
