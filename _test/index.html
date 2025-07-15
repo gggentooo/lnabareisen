@@ -23,10 +23,10 @@
     </header>
 
     <section>
-        <h1>Thoughts</h1>
+        <h1>_test</h1>
     </section>
 
-    <section>
+    <section id="lists">
         <h2>Uncategorized</h2>
         <small>Nothing here, yet!</small>
         <ul id="list-uncategorized"></ul>
@@ -40,6 +40,10 @@
 
     <footer>
     </footer>
+
+    <script>
+        populateMenu("./list.json").then(v => document.getElementById("lists").innerHTML = v);
+    </script>
 </body>
 
 </html>

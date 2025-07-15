@@ -241,6 +241,10 @@ section {
     border-radius: 6px;
     border: 3px double var(--sub-text-color);
 }
+section.nopadding {
+    padding: 0;
+    border: none;
+}
 .horizontal_wrapper {
     display: flex;
     flex-direction: row;
@@ -316,6 +320,11 @@ footer {
     nav {
         width: 100%;
         padding: 0;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    nav>* {
+        width: 45%;
     }
     nav>*::before {
         padding-right: 0.5em;
