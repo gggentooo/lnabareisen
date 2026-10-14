@@ -10,6 +10,18 @@ function toggleDark() {
     localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
 }
 
+function sectionOpenClose(button) {
+  const parent = button.parentElement;
+  const isFolded = button.textContent === 'Fold';
+  button.textContent = isFolded ? 'Open' : 'Fold';
+  
+  Array.from(parent.children).forEach(child => {
+    if (child !== button && child.tagName.toLowerCase() !== 'h2') {
+      child.classList.toggle('hide', isFolded);
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('darkMode') === 'enabled') {
         document.documentElement.classList.add('dark');
@@ -32,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button.textContent = 'Fold';
         button.addEventListener('click', () => sectionOpenClose(button));
         section.appendChild(button);
+        sectionOpenClose(button);
     });
 });
 
@@ -40,16 +53,4 @@ function langOpenClose(target_lang) {
     for (var i = 0; i < target_elems.length; i++) {
         target_elems[i].classList.toggle("hide");
     }
-}
-
-function sectionOpenClose(button) {
-  const parent = button.parentElement;
-  const isFolded = button.textContent === 'Fold';
-  button.textContent = isFolded ? 'Open' : 'Fold';
-  
-  Array.from(parent.children).forEach(child => {
-    if (child !== button && child.tagName.toLowerCase() !== 'h2') {
-      child.classList.toggle('hide', isFolded);
-    }
-  });
 }
