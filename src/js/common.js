@@ -20,10 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
         <button class="darkmode" onclick="toggleDark()">Toggle Dark Mode</button>
         <nav>
             <a href="https://lnaba.reisen/">Home</a>
+            <a href="https://lnaba.reisen/braindumps">Braindumps</a>
             <a href="https://lnaba.reisen/now">Now</a>
         </nav>`;
         
     document.getElementsByTagName('footer')[0].innerHTML = `<a href="mailto:d@lnaba.reisen">Made and Written by D</a>`;
+
+    document.querySelectorAll('.foldable').forEach(section => {
+        const button = document.createElement('button');
+        button.className = 'fold_button';
+        button.textContent = 'Fold';
+        button.addEventListener('click', () => sectionOpenClose(button));
+        section.appendChild(button);
+    });
 });
 
 function langOpenClose(target_lang) {
@@ -31,4 +40,16 @@ function langOpenClose(target_lang) {
     for (var i = 0; i < target_elems.length; i++) {
         target_elems[i].classList.toggle("hide");
     }
+}
+
+function sectionOpenClose(button) {
+  const parent = button.parentElement;
+  const isFolded = button.textContent === 'Fold';
+  button.textContent = isFolded ? 'Open' : 'Fold';
+  
+  Array.from(parent.children).forEach(child => {
+    if (child !== button && child.tagName.toLowerCase() !== 'h2') {
+      child.classList.toggle('hide', isFolded);
+    }
+  });
 }
