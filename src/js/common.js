@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         <nav>
             <a href="https://lnaba.reisen/">Home</a>
             <a href="https://lnaba.reisen/now">Now</a>
-            <a href="https://lnaba.reisen/thoughts">Thoughts</a>
         </nav>`;
         
     document.getElementsByTagName('footer')[0].innerHTML = `<a href="mailto:d@lnaba.reisen">Made and Written by D</a>`;
