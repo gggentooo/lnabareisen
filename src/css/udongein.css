@@ -12,16 +12,18 @@
 }
 
 /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=M+PLUS+1p&display=swap');
+
 @font-face {
     font-family: "Naru";
     src: url("../fonts/Naru-thin.woff2") format("woff2");
-    font-weight: 300;
+    font-weight: 500;
 }
-@font-face {
+/* @font-face {
     font-family: "Naru";
     src: url("../fonts/Naru-regular.woff2") format("woff2");
     font-weight: 500;
-}
+} */
 @font-face {
     font-family: "Naru";
     src: url("../fonts/Naru-bold.woff2") format("woff2");
@@ -30,13 +32,13 @@
 @font-face {
     font-family: "M Plus";
     src: url("../fonts/Mplus1-Light.woff2") format("woff2");
-    font-weight: 300;
+    font-weight: 500;
 }
-@font-face {
+/* @font-face {
     font-family: "M Plus";
     src: url("../fonts/Mplus1-500.woff2") format("woff2");
     font-weight: 500;
-}
+} */
 @font-face {
     font-family: "M Plus";
     src: url("../fonts/Mplus1-Bold.woff2") format("woff2");
@@ -182,8 +184,9 @@ a:hover {
     color: var(--accent-color);
 }
 button {
-    font-weight: 300;
-    font-size: 0.8em;
+    font-family: 'Atkinson Hyperlegible Next', 'Asta Sans', 'M PLUS 1p', 'Verdana', sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
     color: var(--main-text-color);
     background: var(--main-background-color);
     padding: 4px 8px;
@@ -216,8 +219,8 @@ button:hover {
 
 /* Wrappers and layouts */
 body {
-    font-family: 'M Plus', 'Naru', 'Verdana', sans-serif;
-    font-weight: 500;
+    font-family: 'Atkinson Hyperlegible Next', 'Asta Sans', 'M PLUS 1p', 'Verdana', sans-serif;
+    font-weight: 400;
     text-underline-offset: 0.2em;
     background-color: var(--main-background-color);
     display: flex;
