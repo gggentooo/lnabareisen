@@ -23,12 +23,42 @@
 
     <section>
         <h1>Pop'n Music staff comment database - 1. Scraping</h1>
-        <p class="datestamp">Last edited by D, 2026-10-15, during class</p>
-        <p><a href="../">Back to parent page</a> <a href="../">Back to Projects</a></p>
+        <p class="datestamp">Last edited by D, 2026-10-15, during class; <em>This article is still in construction!</em></p>
+        <p><a href="../">Back to Pop'n Music staff comment database main page</a></p>
     </section>
 
     <section>
-        <h2>Scraping?</h2>
+        <h2>First steps: Popper's Lounge</h2>
+        <p>What better place to start scraping staff comments than... <a href="https://popnmusic.fandom.com/wiki/Popper%27s_Lounge" target="_blank" title="Fandom wiki: Popper's Lounge">Popper's Lounge!</a>
+            You might be asking, "Wait, but those aren't staff comments? And there already are multiple backups made of it?"
+            Well, this is actually the first time I've ever scraped things off the internet as part of a project. Since the layouts of Popper's Lounge pages are pretty simple and straightforward, I've decided to use them as a training ground for getting a hold of the tools and libraries to use, the problems I might encounter down the road, how to process and structure the data collected, and so on.
+        </p>
+        <h3>0. Listed links</h3>
+        <p>The <a href="https://web.archive.org/web/20070120202246/http://www.konami.jp/bemani/popn/music1_4/html/lounge.html" target="_blank" title="Wayback Machine: Popper's Lounge">Popper's Lounge main page</a> features an introduction written by Mary followed by a list of links to the 34 individual pages for each Popper's Lounge interview.
+            The list itself is represented in HTML via a <code>&lt;table&gt;</code>. Unlike some of the other... strangely designed layouts to be encountered later on throughout the project, it is structured minimally, perhaps due to the fact that hardly any styling is applied to it. (Maybe this is just how they made websites back in the late 90's.)      
+        </p>
+        <code>&LT;tbody&GT;
+    &LT;tr&GT;
+        &LT;td width="50%"&GT;&LT;a href="guest1.html"&GT;第１回『マリィ、ジュディ、アヤ』&LT;/a&GT;&LT;/td&GT;
+        &LT;td width="50%"&GT;&LT;a href="guest2.html"&GT;第２回『ショルキー』&LT;/a&GT;&LT;/td&GT;
+    &LT;/tr&GT;
+    &LT;tr&GT;
+        &LT;td width="50%"&GT;&LT;a href="guest3.html"&GT;第３回『めぐみちゃん』&LT;/a&GT;&LT;/td&GT;
+        &LT;td width="50%"&GT;&LT;a href="guest4.html"&GT;第４回『アッシュ』&LT;/a&GT;&LT;/td&GT;
+    &LT;/tr&GT;
+    ...</code>
+        <p>Each <code>&lt;td&gt;</code> element conveniently contains an <code>&lt;a&gt;</code> with the link to its corresponding subpage.
+            As one could imagine, manually clicking on the 34 links and copy-pasting its contents by hand would be extremely tedious; so I took the approach of 1) Extracting the list of links to the 34 subpages, and then 2) Writing a script to automatically go through that list and save whatever is returned from the links.
+        </p>
+        <h3>1. From &lt;table&gt; to JSON</h3>
+        <p>What better way to represent a list of links that need to be sequentially accessed, than an array?
+            Converting the raw <code>&lt;table&gt;</code> to an array is pretty straightforward. One would just have to write a script that reads through the file; whenever the string <code>a href="</code> is encountered, whatever immediately follows it up until the next <code>"</code> is appended to the array. The array is then written to a JSON file for transportability.
+            My language of choice for the script was Python:
+        </p>
+    </section>
+
+    <!-- <section>
+        <h2>Final script</h2>
         <code>import requests
 import json
 import os
@@ -61,7 +91,7 @@ def dl_by_game(game_id):
                 file.write(html_content)
 
             print("Successfully downloaded " + filename)</code>
-    </section>
+    </section> -->
 
     <footer>
     </footer>
