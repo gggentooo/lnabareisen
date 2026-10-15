@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <button class="darkmode" onclick="toggleDark()">Toggle Dark Mode</button>
         <nav>
             <a href="https://lnaba.reisen/">Home</a>
+            <a href="https://lnaba.reisen/projects">Projects</a>
             <a href="https://lnaba.reisen/braindumps">Braindumps</a>
             <a href="https://lnaba.reisen/now">Now</a>
         </nav>`;

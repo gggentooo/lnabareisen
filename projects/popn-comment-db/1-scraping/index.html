@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="lnaba.reisen: Projects" />
+    <meta property="og:description" content="lnaba.reisen: Projects - Pop'n Music staff comment database">
+    <meta property="og:site_name" content="lnaba.reisen">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="lnaba.reisen" />
+    <title>lnaba.reisen</title>
+    <link rel="icon" href="../../../src/img/favicon.ico" type="image/x-icon">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../../../src/css/udongein.css">
+    <!-- scripts -->
+    <script src="../../../src/js/common.js"></script>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <section>
+        <h1>Pop'n Music staff comment database - 1. Scraping</h1>
+        <p class="datestamp">Last edited by D, 2026-10-15, during class</p>
+        <p><a href="../">Back to parent page</a> <a href="../">Back to Projects</a></p>
+    </section>
+
+    <section>
+        <h2>Scraping?</h2>
+        <code>import requests
+import json
+import os
+
+def dl_by_game(game_id):
+    base_url = "https://web.archive.org/web/20130111034606/http://www.konami.jp/bemani/popn/music" + str(game_id) + "/mc/"
+    songlist_filepath = "./songlists_json/" + str(game_id) + ".json"
+
+    with open(songlist_filepath) as json_file:
+        json_obj = json.load(json_file)
+        songlist = json_obj['songlist']
+
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    }
+
+    for song in songlist:
+        filename = "./songs_pm" + str(game_id) + "_raw/" + str(song['song_num']) + "_" + song['song_id'] + ".html"
+
+        if not os.path.exists(filename):
+            url = base_url + song['url']
+            response = requests.get(url, headers=headers)
+
+            response.raise_for_status()
+
+            response.encoding = response.apparent_encoding
+            html_content = response.text
+
+            with open(filename, "w", encoding="utf-8") as file:
+                file.write(html_content)
+
+            print("Successfully downloaded " + filename)</code>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+
+</html>

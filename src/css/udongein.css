@@ -122,12 +122,14 @@ small {
     color: var(--sub-text-color);
 }
 code {
+    font-size: 0.8em;
     font-weight: 300;
     padding: 2px 8px;
     border-radius: 4px;
     background-color: var(--sub-background-color);
     color: var(--inverted-text-color);
-    white-space: nowrap;
+    white-space: pre;
+    overflow-x: auto;
 }
 blockquote {
     max-width: 720px;
@@ -176,6 +178,9 @@ a {
     color: var(--sub-text-color);
     font-size: 0.9em;
     text-decoration-style: dashed;
+}
+a.big {
+    font-size: 1.5em;
 }
 a::after {
     content: '⇒';
@@ -234,7 +239,7 @@ header,
 footer,
 .maxwidth_wrapper {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 section {
     display: flex;
